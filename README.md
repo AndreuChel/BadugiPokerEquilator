@@ -1,1 +1,1 @@
-"# BadugiPokerEquilator" 
+# Калькулятор расчета вероянтостей для игры [Бадуги](https://ru.wikipedia.org/wiki/Покер#Бадуги_(Badugi)) (разновидность покера)
