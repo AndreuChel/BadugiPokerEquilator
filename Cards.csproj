@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBB0FAFE-4640-4400-95BA-B2D986AA3C06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cards</RootNamespace>
+    <AssemblyName>Cards</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\tmp\cardsPublish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>747FF54CFEB6C052E549004BF18CC791CC682B05</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Cards_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Poker_classes\Common\DeckAndCards\cardSet.cs" />
+    <Compile Include="Poker_classes\Common\HandAndRange\startHandFactory.cs" />
+    <Compile Include="Poker_classes\Common\Player\IStrategy.cs" />
+    <Compile Include="Poker_classes\Common\Player\pokerPlayer.cs" />
+    <Compile Include="Poker_classes\Common\Player\pokerPlayerMessages.cs" />
+    <Compile Include="Poker_classes\Common\Player\pokerPlayerHelper.cs" />
+    <Compile Include="Poker_classes\Common\HandAndRange\pokerRange.cs" />
+    <Compile Include="Poker_classes\Common\Table\pokerReferee.cs" />
+    <Compile Include="Poker_classes\Games\Badugi\badugiHandsHash.cs" />
+    <Compile Include="Poker_classes\Games\Badugi\badugiStartHand.cs" />
+    <Compile Include="Poker_classes\utils\IStream.cs" />
+    <Compile Include="Poker_classes\Common\Table\pokerTable.cs" />
+    <Compile Include="Poker_classes\Common\Table\pokerTableMessages.cs" />
+    <Compile Include="Poker_classes\Common\Table\pokerDealer.cs" />
+    <Compile Include="Poker_classes\Common\Table\Seats.cs" />
+    <Compile Include="Poker_classes\utils\Iterator\session.cs" />
+    <Compile Include="Poker_classes\Common\enums.cs" />
+    <Compile Include="Poker_classes\Common\exceptions.cs" />
+    <Compile Include="Poker_classes\Common\Game\gameInfo.cs" />
+    <Compile Include="Poker_classes\Games\Badugi\badugiDealer.cs" />
+    <Compile Include="Poker_classes\Games\Badugi\badugiHand.cs" />
+    <Compile Include="Poker_classes\Common\DeckAndCards\card.cs" />
+    <Compile Include="Poker_classes\Common\DeckAndCards\Deck.cs" />
+    <Compile Include="Poker_classes\Common\DeckAndCards\rank.cs" />
+    <Compile Include="Poker_classes\Common\DeckAndCards\suit.cs" />
+    <Compile Include="Poker_classes\Games\Badugi\badugi.cs" />
+    <Compile Include="Poker_classes\Games\Badugi\badugiInfo.cs" />
+    <Compile Include="Poker_classes\Games\Badugi\badugiPlayerHelper.cs" />
+    <Compile Include="Poker_classes\Games\Badugi\badugiRange.cs" />
+    <Compile Include="Poker_classes\Common\Game\pokerGame.cs" />
+    <Compile Include="Poker_classes\Common\HandAndRange\pokerHand.cs" />
+    <Compile Include="Poker_classes\Reports\report.cs" />
+    <Compile Include="Poker_classes\Reports\_rHandStatistic.cs" />
+    <Compile Include="Poker_classes\Reports\_rStartRangeStatistic.cs" />
+    <Compile Include="Poker_classes\Reports\_rWinStatistic.cs" />
+    <Compile Include="Poker_classes\utils\Arrays.cs" />
+    <Compile Include="Poker_classes\utils\bitOperations.cs" />
+    <Compile Include="Poker_classes\utils\Iterator\sessionAsync.cs" />
+    <Compile Include="Poker_classes\utils\MersenneTwister.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
